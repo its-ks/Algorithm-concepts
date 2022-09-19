@@ -1,0 +1,6 @@
+#python code to reverse a integer
+
+x=-142
+sign=[1,-1][x<0]
+r=sign*int(str(abs(x))[::-1])
+print(r)
