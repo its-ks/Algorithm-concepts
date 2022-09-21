@@ -1,0 +1,12 @@
+nums=[1,2,2,2,2,4,4,4,3,3]
+        value=[]
+        freq=[]
+        c = Counter(nums)
+        print(c)
+        for a,b in c.items():
+            #for value:
+            value.append(a)
+            #for freq:
+            freq.append(b)
+        print(value)
+        print(freq)
