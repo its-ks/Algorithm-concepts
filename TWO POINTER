@@ -1,0 +1,18 @@
+#TWO POINTER APPROCH ....LETS TAKE A EXAMPLE OF (TWO SUM)
+#CONDITION- ARRAY SHOULD BE SORTED
+nums=[1,4,7,8,19,23]
+target=15
+i=0
+a=[]
+j=len(nums)-1
+while i<j:
+  s=nums[i]+nums[j]
+  if(s==target):
+      a.append(i)
+      a.append(j)
+      break
+  if(s<target):
+      i=i+1
+  elif(s>target):
+      j=j-1
+print(a)
